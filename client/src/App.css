@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+  padding: 8px 10px;
+  border: 1px solid #e0e3e6;
+  border-radius: 4px;
+  width: 150px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="button"] {
+  background: #6c757d;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button[type="button"]:hover {
+  background: #343a40;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 16px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e0e3e6;
+  text-align: left;
+}
+
+th {
+  background: #f1f3f4;
+  font-weight: 600;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.TotalExpenses {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 22px;
+  color: #343a40;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  form, table { width: 95vw; }
+  table { font-size: 14px; }
+  th, td { padding: 8px 6px; }
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #333;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.delete-btn:hover {
+  background: #bd2130;
+}
